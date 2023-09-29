@@ -37,3 +37,6 @@ CREAZIONE CONTROLLER:
 php artisan make:controller UserController
 Il nome deve essere al singolare, in PascalCase e seguito dalla parola Controller.
 
+AUTO COMPILARE CON TUTTE LE FUNZIONI:
+php artisan make:controller --resource UserController
+
