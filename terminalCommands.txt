@@ -6,6 +6,9 @@ AVVIO SERVER:
 - php artisan serve
 - npm run dev
 
+CREAZIONE MODEL, CONTROLLER, MIGRATION E SEEDER:
+php artisan make:model User -cms
+
 MIGRATION:
 creazione tabella DB:
 php artisan make:migration create_users_table
