@@ -26,7 +26,7 @@ Route::get('/', [HomeController::class, "index"])->name("index");
 // Route::resource("comics", ComicController::class);
 
 //  Index
-//Route::get('/', [ComicController::class, "index"])->name("comics.index");
+//Route::get('/comics', [ComicController::class, "index"])->name("comics.index");
 
 //  Create
 //Route::get('/comics/create', [ComicController::class, "create"])->name("comics.create");
