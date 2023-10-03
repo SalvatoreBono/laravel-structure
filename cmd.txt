@@ -43,3 +43,5 @@ Il nome deve essere al singolare, in PascalCase e seguito dalla parola Controlle
 AUTO COMPILARE CON TUTTE LE FUNZIONI:
 php artisan make:controller --resource UserController
 
+VISUALIZZARE LA LISTA DELLE ROUTE
+php artisan route:list

@@ -1,5 +1,7 @@
 <?php
 
+/* use App\Http\Controllers\ComicController; */
+
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
@@ -14,4 +16,28 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [HomeController::class, "index"])->name("homepage");
+Route::get('/', [HomeController::class, "index"])->name("index");
+
+//Genera tutte le Route
+// Route::resource("comics", ComicController::class);
+
+//  Index
+//Route::get('/', [ComicController::class, "index"])->name("comics.index");
+
+//  Create
+//Route::get('/comics/create', [ComicController::class, "create"])->name("comics.create");
+
+// Store
+//Route::post('/comics', [ComicController::class, "store"])->name("comics.store");
+
+// Show
+//Route::get('/comics/{id}', [ComicController::class, "show"])->name("comics.show");
+
+// Edit
+//Route::get('/comics/{id}/edit', [ComicController::class, "edit"])->name("comics.edit");
+
+// Update
+//Route::put('/comics/{id}', [ComicController::class, "update"])->name("comics.update");
+
+// Delete
+//Route::delete('/comics/{id}', [ComicController::class, "destroy"])->name("comics.destroy");
