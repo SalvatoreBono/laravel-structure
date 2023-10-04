@@ -1,10 +1,15 @@
 <div class="container pt-3">
+    {{-- action="{{ $action }}"= è un segnaposto  --}}
     <form action="{{-- {{ $action }} --}}" class="row g-3" method="POST">
         @csrf()
+        {{-- @method($method) = è un segnaposto --}}
         @method($method)
 
         <div class="col-md-6">
             <label for="inputEmail4" class="form-label">Email</label>
+            {{-- value="{{ old('email'= ottenere il valore precedentemente inviato --}}
+            {{-- , $name?->email) }} = stampare il valore di email --}}
+            {{-- , $name?->email) }} = "?" se la variabile $name non è definito assegna "null"  --}}
             <input type="email" class="form-control @error('email') is-invalid @enderror"
                 value="{{ old('email', $name?->email) }}" id="inputEmail4" name="email">
             @error('email')
