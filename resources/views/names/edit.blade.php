@@ -5,7 +5,7 @@
     {{-- passato come secondo argomento dell'include un array associatiovo 
         [
         'action' =>route('names.update', name->id),
-       'method' => 'PUT',
+        'method' => 'PUT',
         'name' => $name,
     ]) --}}
     {{-- 'action' => route('names.update', name->id), = specifichiamo dove vogliamo inviare i dati --}}
