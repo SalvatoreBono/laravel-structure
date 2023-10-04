@@ -25,23 +25,19 @@ Route::get('/', [HomeController::class, "index"])->name("home");
 //Genera tutte le Route
 // Route::resource("comics", ComicController::class);
 
-//  Index
-//Route::get('/comics', [ComicController::class, "index"])->name("comics.index");
+// ROTTE CRUD COMICS
 
-//  Create
+// CREATE
 //Route::get('/comics/create', [ComicController::class, "create"])->name("comics.create");
-
-// Store
 //Route::post('/comics', [ComicController::class, "store"])->name("comics.store");
 
-// Show
+// READ
+//Route::get('/comics', [ComicController::class, "index"])->name("comics.index");
 //Route::get('/comics/{id}', [ComicController::class, "show"])->name("comics.show");
 
-// Edit
+// UPDATE
 //Route::get('/comics/{id}/edit', [ComicController::class, "edit"])->name("comics.edit");
-
-// Update
 //Route::put('/comics/{id}', [ComicController::class, "update"])->name("comics.update");
 
-// Delete
+// DESTROY
 //Route::delete('/comics/{id}', [ComicController::class, "destroy"])->name("comics.destroy");
